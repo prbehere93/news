@@ -143,7 +143,7 @@ EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend' #smtp backend
 DEFAULT_FROM_EMAIL='info@genomeindia.org'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = env.str("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
